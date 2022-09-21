@@ -20,7 +20,7 @@ O projeto implementa um API e Fornt-End ASP NET utilizando boostrap
 
 ## Installation  
 
-Instar o docker desktop (https://www.docker.com/products/docker-desktop/) para inicializar o container do banco MYSQL
+Instalar o docker desktop (https://www.docker.com/products/docker-desktop/) para inicializar o container do banco MYSQL
 
 Inciar o containar docker executado o comando abaixo na na pasta  /src do projeto:
 ~~~javascript  
