@@ -14,7 +14,6 @@ O projeto implementa um API e Fornt-End ASP NET utilizando boostrap
 - EF Core
 - Resiliência a falhas Polly
 - Bogus
-- FluentValidation
 - Teste Unitário
 - Teste de Integração
 
