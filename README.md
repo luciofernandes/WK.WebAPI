@@ -26,7 +26,7 @@ Inciar o containar docker executado o comando abaixo na na pasta  /src do projet
   docker-compose up -d
 ~~~  
 
-Ao inciar o projeto será inicializar o WK.Catalog.Web a API WK.Catalog.Api (expondo a api via swagger)
+Ao inciar o projeto será inicializado o WK.Catalog.Web e a API WK.Catalog.Api (expondo a api via swagger)
 
 ## Run Locally 🏠  
 Clone o projeto
