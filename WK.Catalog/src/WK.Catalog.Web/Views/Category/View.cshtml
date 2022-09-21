@@ -1,0 +1,43 @@
+﻿@model IEnumerable<WK.Catalog.Web.Response.Category>
+
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#tbCategory').DataTable();
+    });
+</script>
+
+<h1>Lista de Categorias</h1>
+
+<p>
+    <a asp-action="Create">Criar nova categoria</a>
+</p>
+<table class="table table-striped table-bordered dt-responsive nowarp" id="tbCategory">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+        
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+
+            <td>
+                @Html.ActionLink("Editar", "Edit", new {  id=item.Id }) |
+                @Html.ActionLink("Exibir", "Details", new {  id=item.Id  }) |
+                @Html.ActionLink("Excluir", "Delete", new {  id=item.Id  })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
